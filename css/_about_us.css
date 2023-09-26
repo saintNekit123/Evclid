@@ -1,0 +1,52 @@
+.about-text {
+    max-width: 1235px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.about-cards-wrap {
+    justify-content: space-between;
+}
+
+.about-column:not(:last-child) {
+    width: calc(868 / 1920 * 100%);
+    margin-right: 32px;
+}
+
+.about-card {
+    border: 1px solid #cacaca;
+    border-radius: 32px;
+    max-height: 868px;
+}
+
+.about-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-content {
+    padding: 65px 118px 65px 300px;
+}
+
+.card-cube {
+    background-image: url("../img/about_cube.svg");
+    margin-bottom: 32px;
+}
+
+.card-gear {
+    background-image: url("../img/about_gear.svg");
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--black);
+}

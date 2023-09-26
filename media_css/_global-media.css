@@ -1,0 +1,55 @@
+@media (max-width: 1500px) {
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .section-offset {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 630px) {
+    .section-offset {
+        margin-bottom: 61px;
+    }
+    .container {
+        max-width: 630px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 320px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .burger-line {
+        color: var(--white);
+    }
+
+    .stage_btn-right {
+        background-color: var(--white);
+        color: var(--black);
+    }
+}

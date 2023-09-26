@@ -1,0 +1,83 @@
+.btn {
+    display: inline-block;
+    background-color: var(--orange);
+    border-radius: 16px;
+    -moz-outline-radius: 16px;
+    color: var(--white);
+    transition: background-color var(--short) ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--orange-light);
+}
+
+.btn:focus {
+    outline: 0;
+    background-color: var(--orange-light);
+}
+
+.btn:active {
+    background-color: var(--orange-dark);
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn--border-accent {
+    border: 3px solid var(--orange);
+    color: var(--white);
+    background-color: transparent;
+    transition: background-color var(--short) ease-in-out;
+}
+
+.btn--border-accent:hover {
+    background-color: var(--orange);
+}
+
+.btn--border-accent:focus {
+    background-color: var(--orange);
+}
+
+.btn--border-accent:active {
+    background-color: var(--orange-dark);
+    border: 3px solid var(--orange-dark);
+}
+
+.stage-bnt {
+    cursor: pointer;
+    transition: color var(--short) ease-in-out;
+}
+
+.stage_btn-right {
+    padding: 20px 38px;
+    background-color: var(--white);
+    outline: 1px solid var(--black);
+
+    color: var(--black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    transition: background-color var(--short) ease-in-out,
+        color var(--short) ease-in-out, outline var(--short) ease-in-out;
+}
+
+.stage_btn-right:hover {
+    background-color: var(--gray);
+    color: var(--white);
+    outline: none;
+}
+
+.stage_btn-right:focus {
+    background-color: var(--gray);
+    color: var(--white);
+    outline: none;
+}
+
+.stage_btn-right:active {
+    color: var(--white);
+    background-color: var(--black);
+}

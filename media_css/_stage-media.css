@@ -1,0 +1,131 @@
+@media (max-width: 1200px) {
+    .stage-item {
+        flex-direction: column;
+    }
+    .stage_item-block {
+        margin-right: 50px;
+    }
+
+    .stage_btn-list {
+        display: flex;
+    }
+
+    .stage_btn_left {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-buttons {
+        margin-bottom: 50px;
+    }
+
+    .stage-item-block {
+        margin: 0;
+    }
+}
+
+@media (max-width: 890px) {
+    .section-stage {
+        margin-bottom: 49px;
+    }
+
+    .stage_right {
+        margin-bottom: 38px;
+    }
+
+    .stage_item-block {
+        order: 2;
+        margin-right: 0;
+    }
+
+    .stage_item-descr {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .descr_last {
+        margin-bottom: 25px;
+    }
+
+    .section-buttons {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .stage-right {
+        width: 350px;
+    }
+
+    .stage-btn-left {
+        width: 142px;
+        padding: 20px 20px;
+        margin-right: 15px;
+    }
+
+    .stage-btn-right {
+        width: 142px;
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .stage-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-stage {
+        margin-bottom: 60px;
+    }
+
+    .stage_right {
+        margin-bottom: 16px;
+    }
+
+    .stage-img img {
+        border-radius: 16px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .step-btn {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .section-buttons {
+        margin-bottom: 16px;
+    }
+
+    .stage_item-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .stage_item-descr {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .stage_btn_left {
+        margin-right: 10px;
+        padding: 12px 44px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        border-radius: 8px;
+    }
+
+    .stage_btn-right {
+        padding: 12px 32px;
+        font-size: 12px;
+        line-height: 15px;
+        border-radius: 8px;
+    }
+}

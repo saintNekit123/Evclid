@@ -1,0 +1,239 @@
+.header {
+    margin-bottom: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+}
+
+.header-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger {
+    display: none;
+}
+
+.header-logo,
+.header-search-btn {
+    flex-shrink: 0;
+}
+
+.header-logo {
+    width: 224px;
+    height: 72px;
+}
+
+.header-nav {
+    align-items: center;
+    margin-left: 295px;
+}
+
+.nav-close-btn {
+    position: relative;
+    top: 38px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-close-btn:active .close-line {
+    background-color: var(--orange);
+}
+
+.header-menu {
+    flex-wrap: wrap;
+    font-weight: var(--semibold);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header-menu-item:not(:last-child) {
+    margin-right: 85px;
+}
+
+.header-menu-link {
+    position: relative;
+    outline: none;
+}
+
+.header-menu-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange);
+    transform: scaleX(0);
+    transition: transform var(--short);
+}
+
+.header-menu-link:hover::after {
+    transform: scaleX(1);
+}
+
+.header-menu-link:focus:not(:hover) {
+    outline: 2px solid var(--orange);
+    outline-offset: 5px;
+}
+
+.header-menu-link:active {
+    color: var(--orange-dark);
+}
+
+.header-menu-link:active::after {
+    color: var(--orange-dark);
+    transform: scaleX(1);
+    background-color: var(--orange-dark);
+}
+
+.header-search-btn {
+    width: 24px;
+    height: 24px;
+    color: var(--dark);
+    transition: color var(--short);
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header-search-btn:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.header-search-btn:focus:not(:hover) {
+    outline: 2px solid var(--orange);
+    outline-offset: 5px;
+}
+
+.header-search-btn:active {
+    color: var(--orange-dark);
+}
+
+.form {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+    align-items: center;
+    padding: 16px 13px 16px 32px;
+    height: 60px;
+    max-width: 540px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    transform-origin: right;
+}
+.search-input {
+    outline: none;
+    width: 412px;
+    margin-right: 30px;
+    padding-bottom: 3px;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+
+.search-btn,
+.close-btn {
+    height: 34px;
+    padding: 4px;
+    border-radius: 0;
+    outline: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: transparent !important;
+}
+
+.search-btn {
+    margin-right: 20px;
+}
+
+.search-btn:focus {
+    border-color: var(--orange);
+    border-radius: 0;
+}
+
+.search-lop rect {
+    transition: fill var(--short) ease-in-out;
+}
+
+.search-lop path {
+    transition: stroke var(--short) ease-in-out;
+}
+
+.search-btn:hover rect {
+    fill: var(--orange);
+}
+
+.search-btn:hover path {
+    stroke: var(--orange);
+}
+
+.close-btn rect {
+    transition: fill var(--short) ease-in-out;
+}
+
+.close-btn circle {
+    transition: stroke var(--short) ease-in-out;
+}
+
+.close-btn:focus {
+    border-color: var(--orange);
+}
+
+.close-btn:hover rect {
+    fill: var(--orange);
+}
+
+.close-btn:hover circle {
+    stroke: var(--orange);
+}
+
+.close-btn:active rect {
+    fill: var(--black);
+}
+
+.close-btn:active circle {
+    stroke: var(--black);
+}
+
+@keyframes search-open {
+    from {
+        transform: translateY(-50%) scaleX(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-50%) scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes search-close {
+    from {
+        transform: translateY(-50%) scaleX(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50%) scaleX(0);
+        opacity: 0;
+    }
+}
+
+.form.is-opened {
+    display: flex;
+    animation-name: search-open;
+    animation-duration: 0.3s;
+}
+
+.form.is-closed {
+    animation-name: search-close;
+    animation-duration: 0.3s;
+}
+
+.search {
+    order: 1;
+}

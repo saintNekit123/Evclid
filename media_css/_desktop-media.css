@@ -1,0 +1,29 @@
+@media (max-width: 1600px) {
+    /* Hero */
+    .hero-container {
+        padding: 160px 77px 160px 77px;
+    }
+
+    .hero-descr {
+        margin-bottom: 60px;
+    }
+
+    /* footer */
+
+    .footer-column-center {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    /* header */
+    .header-nav {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-menu_item:not(:last-child) {
+        margin-right: 50px;
+    }
+}

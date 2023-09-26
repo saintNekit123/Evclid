@@ -1,0 +1,31 @@
+.questions-title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--black);
+}
+
+.container-wrap {
+    padding: 0;
+}
+
+.content-wrap {
+    max-width: 1000px;
+}
+
+.content-descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.content-descr:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.content-descr:last-child {
+    margin-bottom: 40px;
+}

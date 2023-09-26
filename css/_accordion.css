@@ -1,0 +1,128 @@
+.accordion-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    order: 1;
+}
+
+.accordion-item {
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.accordion-btn {
+    order: 2;
+    border: none;
+    padding: 0;
+    background-color: inherit;
+}
+
+.accordion-btn:focus-visible {
+    outline: none;
+}
+
+.accordion-item:hover .accordion-title,
+.accordion-btn:focus + .accordion-title {
+    color: var(--orange);
+}
+
+.accordion-btn-first::before {
+    border-top: 1px solid var(--light-gray);
+}
+
+.accordion-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    top: 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.accordion-btn:hover::before,
+.accordion-btn:focus::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.content-wrap {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition-delay: 0.3s;
+}
+
+.is-active .content-wrap {
+    opacity: 1;
+    visibility: visible;
+}
+
+.head-icon {
+    position: absolute;
+    top: 56px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    transform: translateY(-50%);
+    transition: background-color.3s, 0.6s ease, transform 0.3s, 0.6s ease;
+}
+
+.head-icon::before,
+.head-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    transition: background-color, 0.3s ease;
+}
+
+.head-icon::before {
+    width: 31px;
+    height: 1px;
+}
+
+.head-icon::after {
+    width: 1px;
+    height: 31px;
+}
+
+.heading:hover,
+.heading:focus {
+    color: orange;
+    outline: none;
+}
+
+.heading:hover .head-icon,
+.heading:focus .head-icon {
+    background-color: orange;
+}
+
+.heading:hover .head-icon::before,
+.heading:hover .head-icon::after,
+.heading:focus .head-icon::before,
+.heading:focus .head-icon::after {
+    background-color: #fff;
+}
+
+.is-active .head-icon {
+    transform: translateY(-50%) rotate(45deg);
+}
